@@ -1,0 +1,1731 @@
+{
+    "name": "Space Marine Kill Team",
+    "factionKeyword": "Space Marine",
+    "conditions": [
+        {
+            "type": "poolsum",
+            "pool": "fireteam",
+            "min": 1,
+            "max": 1
+        },
+        {
+            "type": "poolsum",
+            "pool": "heavyThunderHammer",
+            "max": 1
+        },
+        {
+            "type": "poolsum",
+            "pool": "auxiliaryGrenadeLauncher",
+            "max": 1
+        },
+        {
+            "type": "poolsum",
+            "pool": "helixGauntlet",
+            "max": 1
+        },
+        {
+            "type": "poolsum",
+            "pool": "auspex",
+            "max": 1
+        }
+    ],
+    "fireteams": [
+        {
+            "name": "Deathwatch Veteran Fire Team",
+            "pools": [
+                "fireteam"
+            ],
+            "conditions": [
+                {
+                    "type": "poolsum",
+                    "pool": "operative",
+                    "min": 5,
+                    "max": 6
+                },
+                {
+                    "type": "poolsum",
+                    "pool": "sergeant",
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "type": "poolsum",
+                    "pool": "fighter",
+                    "max": 1
+                },
+                {
+                    "type": "poolsum",
+                    "pool": "gunner",
+                    "max": 1
+                },
+                {
+                    "type": "poolsum",
+                    "pool": "heavy",
+                    "max": 1
+                }
+            ],
+            "operatives": [
+                {
+                    "name": "Deathwatch Veteran Watch Sergeant",
+                    "stats": [
+                        "6\"",
+                        "3",
+                        "1",
+                        "3",
+                        "3+",
+                        "12"
+                    ],
+                    "pools": [
+                        "operative",
+                        "sergeant"
+                    ],
+                    "loadouts": [
+                        {
+                            "name": "Heavy thunder hammer",
+                            "selections": [
+                                {
+                                    "name": "Two-handed",
+                                    "options": [
+                                        {
+                                            "name": "Heavy thunder hammer",
+                                            "range": "M",
+                                            "pools": [
+                                                "heavyThunderHammer"
+                                            ],
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "3+",
+                                                        "6/8"
+                                                    ],
+                                                    "crit": [
+                                                        "Stun"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Lightning claws",
+                            "selections": [
+                                {
+                                    "name": "Dual wield",
+                                    "options": [
+                                        {
+                                            "name": "Lightning claws",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Lethal 5+",
+                                                        "Relentless"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Boltgun and Power weapon",
+                            "selections": [
+                                {
+                                    "name": "Melee",
+                                    "options": [
+                                        {
+                                            "name": "Power weapon",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "4/6"
+                                                    ],
+                                                    "special": [
+                                                        "Lethal 5+"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Ranged",
+                                    "options": [
+                                        {
+                                            "name": "Deathwatch boltgun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Dragonfire",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ],
+                                                    "special": [
+                                                        "No Cover"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Hellfire",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ],
+                                                    "crit": [
+                                                        "Rending"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Kraken",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ],
+                                                    "crit": [
+                                                        "P1"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Vengeance",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "4/4"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Fists and ranged",
+                            "selections": [
+                                {
+                                    "name": "Melee",
+                                    "options": [
+                                        {
+                                            "name": "Fists",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Ranged",
+                                    "options": [
+                                        {
+                                            "name": "Deathwatch boltgun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Dragonfire",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ],
+                                                    "special": [
+                                                        "No Cover"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Hellfire",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ],
+                                                    "crit": [
+                                                        "Rending"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Kraken",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ],
+                                                    "crit": [
+                                                        "P 1"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Vengeance",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "4/4"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Deathwatch shotgun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Cryptclearer",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "4/4"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Wyrmsbreath",
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 3",
+                                                        "Torrent 2"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Xenopurge",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/5"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6"
+                                                    ],
+                                                    "crit": [
+                                                        "P 1"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Combi-flamer",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "Rng 6",
+                                                        "Torrent 2",
+                                                        "Limited"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Combi-grav",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "AP 1",
+                                                        "Grav",
+                                                        "Limited"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Combi-melta",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "6/3"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "Rng 6",
+                                                        "AP 2",
+                                                        "Limited"
+                                                    ],
+                                                    "crit": [
+                                                        "MW 4"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Combi-plasma",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Standard",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "AP 1",
+                                                        "Limited"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Supercharge",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "AP 2",
+                                                        "Hot",
+                                                        "Limited"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Flamer",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "Torrent 2"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Grav-gun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "AP 1",
+                                                        "Grav"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Meltagun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "6/3"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "AP 2"
+                                                    ],
+                                                    "crit": [
+                                                        "MW 4"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Plasma gun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Standard",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "AP 1"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Supercharge",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "AP 2",
+                                                        "Hot"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Stalker pattern boltgun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ],
+                                                    "special": [
+                                                        "Heavy",
+                                                        "AP 1"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Storm bolter",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ],
+                                                    "special": [
+                                                        "Relentless"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Melee and offhand",
+                            "selections": [
+                                {
+                                    "name": "Melee",
+                                    "options": [
+                                        {
+                                            "name": "Chainsword",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "4/5"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Lightning claw",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Lethal 5+"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Power fist",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "3+",
+                                                        "5/7"
+                                                    ],
+                                                    "special": [
+                                                        "Brutal"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Power maul",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "4/5"
+                                                    ],
+                                                    "crit": [
+                                                        "Stun"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Power weapon",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "4/6"
+                                                    ],
+                                                    "special": [
+                                                        "Lethal 5+"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Thunder hammer",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "3+",
+                                                        "5/6"
+                                                    ],
+                                                    "crit": [
+                                                        "Stun"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Xenophase blade",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "4/6"
+                                                    ],
+                                                    "special": [
+                                                        "Brutal",
+                                                        "Lethal 5+"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Offhand",
+                                    "options": [
+                                        {
+                                            "name": "Bolt pistol",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/4"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Grav-pistol",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "AP 1",
+                                                        "Grav"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Hand flamer",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "Torrent 1"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Inferno pistol",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "5/3"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 3",
+                                                        "AP 2"
+                                                    ],
+                                                    "crit": [
+                                                        "MW 3"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Plasma pistol",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Standard",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "AP 1"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Supercharge",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "AP 2",
+                                                        "Hot"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Storm shield"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Deathwatch Veteran Warrior",
+                    "stats": [
+                        "6\"",
+                        "3",
+                        "1",
+                        "3",
+                        "3+",
+                        "11"
+                    ],
+                    "pools": [
+                        "operative"
+                    ],
+                    "loadouts": [
+                        {
+                            "name": "Boltgun and Power weapon",
+                            "selections": [
+                                {
+                                    "name": "Melee",
+                                    "options": [
+                                        {
+                                            "name": "Power weapon",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "4/6"
+                                                    ],
+                                                    "special": [
+                                                        "Lethal 5+"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Ranged",
+                                    "options": [
+                                        {
+                                            "name": "Deathwatch boltgun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Dragonfire",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "3/4"
+                                                    ],
+                                                    "special": [
+                                                        "No Cover"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Hellfire",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "3/4"
+                                                    ],
+                                                    "crit": [
+                                                        "Rending"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Kraken",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "3/4"
+                                                    ],
+                                                    "crit": [
+                                                        "P 1"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Vengeance",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "4/4"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Fists and ranged",
+                            "selections": [
+                                {
+                                    "name": "Melee",
+                                    "options": [
+                                        {
+                                            "name": "Fists",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "4/6"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Ranged",
+                                    "options": [
+                                        {
+                                            "name": "Deathwatch shotgun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Cryptclearer",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "4/4"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Wyrmsbreath",
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 3",
+                                                        "Torrent 2"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Xenopurge",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "3/5"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6"
+                                                    ],
+                                                    "crit": [
+                                                        "P 1"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Stalker pattern boltgun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "3/4"
+                                                    ],
+                                                    "special": [
+                                                        "Heavy",
+                                                        "AP 1"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Stormbolter",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "3/4"
+                                                    ],
+                                                    "special": [
+                                                        "Relentless"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Deathwatch Veteran Fighter",
+                    "pools": [
+                        "operative",
+                        "fighter"
+                    ],
+                    "stats": [
+                        "6\"",
+                        "3",
+                        "1",
+                        "3",
+                        "3+",
+                        "11"
+                    ],
+                    "loadouts": [
+                        {
+                            "name": "Heavy thunder hammer",
+                            "selections": [
+                                {
+                                    "name": "Two-handed",
+                                    "options": [
+                                        {
+                                            "name": "Heavy thunder hammer",
+                                            "range": "M",
+                                            "pools": [
+                                                "heavyThunderHammer"
+                                            ],
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "4+",
+                                                        "6/8"
+                                                    ],
+                                                    "crit": [
+                                                        "Stun"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Lightning claws",
+                            "selections": [
+                                {
+                                    "name": "Dual wield",
+                                    "options": [
+                                        {
+                                            "name": "Lightning claws",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "3+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Lethal 5+",
+                                                        "Relentless"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Melee and offhand",
+                            "selections": [
+                                {
+                                    "name": "Melee",
+                                    "options": [
+                                        {
+                                            "name": "Chainsword",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "4/5"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Lightning claw",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "3+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Lethal 5+"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Power fist",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "4+",
+                                                        "5/7"
+                                                    ],
+                                                    "special": [
+                                                        "Brutal"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Power maul",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "3+",
+                                                        "4/5"
+                                                    ],
+                                                    "crit": [
+                                                        "Stun"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Power weapon",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "3+",
+                                                        "4/6"
+                                                    ],
+                                                    "special": [
+                                                        "Lethal 5+"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Thunder hammer",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "4+",
+                                                        "5/6"
+                                                    ],
+                                                    "crit": [
+                                                        "Stun"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Offhand",
+                                    "options": [
+                                        {
+                                            "name": "Bolt pistol",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "3/4"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Grav-pistol",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "AP 1",
+                                                        "Grav"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Hand flamer",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "Torrent 1"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Inferno pistol",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "5/3"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 3",
+                                                        "AP 2"
+                                                    ],
+                                                    "crit": [
+                                                        "MW 3"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Plasma pistol",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Standard",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "AP 1"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Supercharge",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "AP 2",
+                                                        "Hot"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Storm shield"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Deathwatch Veteran Gunner",
+                    "pools": [
+                        "operative",
+                        "gunner"
+                    ],
+                    "stats": [
+                        "6\"",
+                        "3",
+                        "1",
+                        "3",
+                        "3+",
+                        "11"
+                    ],
+                    "loadouts": [
+                        {
+                            "name": "Fists and ranged",
+                            "selections": [
+                                {
+                                    "name": "Melee",
+                                    "options": [
+                                        {
+                                            "name": "Fists",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "3",
+                                                        "3+",
+                                                        "3/4"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Ranged",
+                                    "options": [
+                                        {
+                                            "name": "Combi-flamer",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "Rng 6",
+                                                        "Torrent 2",
+                                                        "Limited"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Combi-grav",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "AP 1",
+                                                        "Grav",
+                                                        "Limited"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Combi-melta",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "6/3"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "Rng 6",
+                                                        "AP 2",
+                                                        "Limited"
+                                                    ],
+                                                    "crit": [
+                                                        "MW 4"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Combi-plasma",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Standard",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "AP 1",
+                                                        "Limited"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Supercharge",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "Combi",
+                                                        "AP 2",
+                                                        "Hot",
+                                                        "Limited"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Flamer",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "Torrent 2"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Grav-gun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "AP 1",
+                                                        "Grav"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Meltagun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "6/3"
+                                                    ],
+                                                    "special": [
+                                                        "Rng 6",
+                                                        "AP 2"
+                                                    ],
+                                                    "crit": [
+                                                        "MW 4"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Plasma gun",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Standard",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "AP 1"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Supercharge",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "AP 2",
+                                                        "Hot"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Deathwatch Veteran Heavy Gunner",
+                    "pools": [
+                        "operative",
+                        "heavy"
+                    ],
+                    "stats": [
+                        "6\"",
+                        "3",
+                        "1",
+                        "3",
+                        "3+",
+                        "11"
+                    ],
+                    "loadouts": [
+                        {
+                            "name": "Fists and ranged",
+                            "selections": [
+                                {
+                                    "name": "Melee",
+                                    "options": [
+                                        {
+                                            "name": "Fists",
+                                            "range": "M",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "3",
+                                                        "3+",
+                                                        "3/4"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Ranged",
+                                    "options": [
+                                        {
+                                            "name": "Frag cannon",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Frag",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "4/6"
+                                                    ],
+                                                    "special": [
+                                                        "Blast 2"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Shell",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "5/6"
+                                                    ],
+                                                    "special": [
+                                                        "AP 1"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Heavy bolter",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "5",
+                                                        "3+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Heavy",
+                                                        "Fussilade"
+                                                    ],
+                                                    "crit": [
+                                                        "P 1"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Heavy flamer",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "stats": [
+                                                        "6",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Heavy",
+                                                        "Rng 6",
+                                                        "Torrent 2"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Infernus heavy bolter",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Heavy bolter",
+                                                    "stats": [
+                                                        "5",
+                                                        "3+",
+                                                        "4/5"
+                                                    ],
+                                                    "special": [
+                                                        "Heavy",
+                                                        "Fussilade"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Heavy flamer",
+                                                    "stats": [
+                                                        "6",
+                                                        "2+",
+                                                        "2/2"
+                                                    ],
+                                                    "special": [
+                                                        "Heavy",
+                                                        "Rng 6",
+                                                        "Torrent 2"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Missile launcher",
+                                            "range": "R",
+                                            "profiles": [
+                                                {
+                                                    "name": "Frag",
+                                                    "stats": [
+                                                        "4",
+                                                        "3+",
+                                                        "3/5"
+                                                    ],
+                                                    "special": [
+                                                        "Heavy",
+                                                        "Blast 2"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Krak",
+                                                    "stats": [
+                                                        "4",
+                                                        "2+",
+                                                        "5/7"
+                                                    ],
+                                                    "special": [
+                                                        "Heavy",
+                                                        "AP 1"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "strategicPloys": [],
+    "tacticalPloys": [],
+    "equipment": [
+        {
+            "name": "Auxiliary Grenade Launcher",
+            "pools": "auxiliaryGrenadeLauncher",
+            "cost": 1,
+            "requiresAllKeywords": [
+                "Intercessor"
+            ]
+        },
+        {
+            "name": "Helix Gauntlet",
+            "pools": "helixGauntlet",
+            "cost": 2,
+            "requiresAllKeywords": [
+                "Infiltrator",
+                "Warrior"
+            ]
+        },
+        {
+            "name": "Smoke Grenade",
+            "cost": 3,
+            "requiresAnyKeyword": [
+                "Incursor",
+                "Infiltrator",
+                "Reiver",
+                "Scout"
+            ]
+        },
+        {
+            "name": "Haywire Mine",
+            "cost": 3,
+            "requiresAllKeywords": [
+                "Incursor",
+                "Warrior"
+            ]
+        },
+        {
+            "name": "Shock Grenade",
+            "cost": 3,
+            "requiresAllKeywords": [
+                "Reiver"
+            ]
+        },
+        {
+            "name": "Frag Grenade",
+            "cost": 2
+        },
+        {
+            "name": "Krak Grenade",
+            "cost": 3
+        },
+        {
+            "name": "Purity Seal",
+            "cost": 3
+        },
+        {
+            "name": "Suspensor System",
+            "cost": 3
+        },
+        {
+            "name": "Grapnel Launcher",
+            "cost": 1,
+            "requiresAllKeywords": [
+                "Reiver"
+            ]
+        },
+        {
+            "name": "Grav chute",
+            "cost": 1,
+            "requiresAllKeywords": [
+                "Reiver"
+            ]
+        },
+        {
+            "name": "Auspex",
+            "pools": "auspex",
+            "cost": 3
+        }
+    ]
+}
